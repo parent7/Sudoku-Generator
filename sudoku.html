@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sudoku</title>
+
+	<!-- Since the length of the CSS is so short, I decided to not create a separate file. -->
+	<style>
+		table {
+			border: thick solid #000;
+			user-select: none;
+		}
+		td {
+			border: 1px solid #000;
+			font-size: 30px;
+			width: 45px;
+			height: 50px;
+			text-align: center;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<!-- Since the goal was to create a sudoku generator, I used the cellspacing and draggable attributes since it was an easy fix, even though it isn't the best practice -->
+	<table id="table" cellspacing="0" draggable="false"></table>
+	
+	<script src="sudoku.js"></script>
+</body>
+</html>
